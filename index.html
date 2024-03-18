@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-box container">
+        <a class="logo" href="index.html"> My 2048 </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about-me">About me</a></li>
+            <li class="nav-item">
+              <a href="#about-game">About Game 2048</a>
+            </li>
+            <li class="nav-item"><a href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a href="#mini-game">Mini game</a></li>
+            <li class="nav-item"><a href="#feedback">Feedback</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h3 id="about-me"></h3>
+      <section class="about-me container">
+        <div class="about-box">
+          <h1 class="section-title" >About me</h1>
+          <p class="section-desc">
+            Hello! My name is Yevhenii Pavlenko. This mini-game is my project
+            created for learning programming and web application development. I
+            am a beginner Front-End developer. To develop this site I used HTML,
+            CSS and JS.
+          </p>
+        </div>
+      </section>
+      <h3 id="about-game"></h3>
+      <section class="about-game container" >
+        <div class="about-game-box">
+          <h2 class="section-title">About Game 2048</h2>
+          <p class="section-desc">
+            2048 is a video game, originally a browser-based game, written by
+            19-year-old Italian developer Gabriele Cirulli in the JavaScript
+            programming language. The game is a numerical puzzle with a field in
+            the form of a square 4x4 cells. The goal of the game is to make
+            tiles with numbers to get a tile of denomination "2048", hence the
+            name (but you can continue playing).
+          </p>
+          <p class="section-desc">
+            The game starts on a square field of 16 cells, where two cells are
+            occupied by tiles of denominations "2" and "4". Each tile can be
+            moved horizontally or vertically. Each time a player moves a tile,
+            an additional tile of denomination "2" (with 90% probability) or "4"
+            (with 10% probability) appears on the field. Two tiles of the same
+            face value, being placed on the same cell, merge into one, the face
+            value of which is equal to the sum of the merged ones. If there are
+            more than two tiles of the same denomination in one of the lines
+            after the movement, they merge automatically. Each denomination
+            corresponds to its own color, the more denomination, the more "hot"
+            color. For each merge game points are increased by the face value of
+            the newly formed tile. The goal is to get a "2048" tile, after which
+            it is allowed to extend. The game ends if it is impossible to merge
+            tiles after another move.
+          </p>
+        </div>
+      </section>
+
+      <h3 id="gallery"></h3>
+      <section class="gallery container" >
+        <div class="gallery-box">
+          <h2 class="section-title">Gallery</h2>
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img src="./img/2048-classic.png" alt="2048-classic" class="gallery-img" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/2048_improbable.png" alt="2048_improbable" class="gallery-img" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/2048-colors.png" alt="2048-colors" class="gallery-img" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/2048-colors.png" alt="2048-colors" class="gallery-img" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/2048_improbable.png" alt="2048_improbable" class="gallery-img" />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="https://ahaslides.com/wp-content/uploads/2023/11/giphy-5.webp"
+                alt="2048-web"
+                class="gallery-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <h3 id="mini-game"></h3>
+      <section class="mini-game container" >
+        <h2 class="section-title">This is MINI-Game "2048"</h2>
+        <div class="mini-game-box"></div>
+      </section>
+
+      <h3 id="feedback"></h3>
+      <section class="feedback container" >
+        <h2 class="section-title">Feedback</h2>
+        <form class="feedback-form" action="/" method="post">
+          <div class="form-box">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div class="form-box">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="form-box">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+          </div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2024 My Mini-Game. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
